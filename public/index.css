@@ -1,0 +1,51 @@
+/* Definición de la fuente personalizada 'SF Distant Galaxy' */
+@font-face {
+  font-family: 'SF Distant Galaxy';
+  src: local('SF Distant Galaxy'), url(fonts/SF\ Distant\ Galaxy.ttf), format('ttf');
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+  background-color: rgb(0, 0, 0); /* Color de fondo negro */
+  margin: 0; /* Sin margen */
+  font-family: 'SF Distant Galaxy'; /* Fuente personalizada */
+}
+
+/* Estilo para el encabezado */
+#heading {
+  position: fixed; /* Posición fija en la parte superior */
+  width: 100%; /* Ocupa todo el ancho */
+  padding: 32px; /* Espaciado interno de 32px */
+}
+
+/* Estilo para la línea decorativa debajo del encabezado */
+.border {
+  background: linear-gradient(90deg, rgb(255, 0, 0), 90%, black); /* Gradiente de rojo a negro */
+  height: 2px; /* Altura de 2px */
+  width: 80vw; /* Ocupa el 80% del ancho de la ventana */
+  margin-top: 4px; /* Margen superior de 4px */
+}
+
+/* Estilo para los encabezados de nivel 1 */
+h1 {
+  color: rgb(215, 215, 215); /* Color del texto gris claro */
+  font-size: 4em; /* Tamaño de fuente grande */
+  margin: 0px; /* Sin margen */
+  font-weight: 100; /* Fuente delgada */
+}
+
+/* Contenedor para mostrar el progreso centrado en la pantalla */
+#progress-container {
+  position: fixed; /* Posición fija, ocupa toda la pantalla */
+  width: 100%; /* Ocupa todo el ancho */
+  height: 100%; /* Ocupa toda la altura */
+  display: flex; /* Utiliza flexbox para centrar el contenido */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+}
+
+/* Estilo para el texto que muestra el progreso */
+#progress {
+  font-size: 3em; /* Tamaño de fuente grande */
+  color: white; /* Color de texto blanco */
+}
